@@ -15,16 +15,14 @@
 
 <svelte:document on:keydown={handleKeys} />
 
-<div class="flex-column center">
-    <h1>Yet Another Wordle Clone</h1>
-    {#each $game.guesses as guess}
-        <Guess {guess} />
-    {/each}
+<h1>Yet Another Wordle Clone</h1>
+{#each $game.guesses as guess}
+    <Guess {guess} />
+{/each}
 
-    {#if $game.isSolved}
-        <div>You win!</div>
-        <button on:click={() => $game.newGame()}> Play again </button>
-    {:else}
-        <GuessInput />
-    {/if}
-</div>
+{#if $game.isSolved}
+    <div>You win!</div>
+    <button on:click={() => $game.newGame()}> Play again </button>
+{/if}
+
+<GuessInput />
