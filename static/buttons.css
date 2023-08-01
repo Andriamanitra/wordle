@@ -1,0 +1,34 @@
+button {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 7px;
+    padding: 0.3em 1em;
+    background-color: #e7e7e8;
+    border-style: solid;
+    border-width: 0 2px 3px 2px;
+    border-radius: 5px;
+    border-color: #aaa;
+    box-shadow: 0px 0px 2px #000;
+}
+
+button:enabled:active {
+    box-shadow: 0px 0px 2px #555;
+}
+
+button:enabled:hover {
+    cursor: pointer;
+    filter: brightness(97%);
+}
+
+button:disabled {
+    color: #8d8d8d;
+    border-color: #cfcfcf;
+}
+
+button:focus-visible {
+    outline-offset: 2px;
+    outline: 5px solid #0bc;
+}

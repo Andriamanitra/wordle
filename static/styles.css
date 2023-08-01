@@ -1,0 +1,50 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.invalid .letter {
+    outline-color: red;
+}
+
+.valid .letter {
+    outline-color: rgb(18, 204, 18);
+}
+
+.guess {
+    height: 2em;
+    margin: 0.5em;
+    line-height: 2em;
+    gap: 0.5em;
+}
+
+.letter {
+    border-radius: 2px;
+    outline-width: 2px;
+    outline-style: solid;
+    width: 2em;
+    height: 2em;
+}
+
+.green {
+    background-color: rgb(18, 204, 18);
+}
+
+.grey {
+    background-color: rgb(167, 167, 167);
+}
+
+.yellow {
+    background-color: rgb(223, 223, 29);
+}
